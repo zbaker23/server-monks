@@ -20,7 +20,7 @@ knitr::opts_chunk$set(
 [![CRAN status](https://www.r-pkg.org/badges/version/servermonks)](https://CRAN.R-project.org/package=servermonks)
 <!-- badges: end -->
 
-The goal of servermonks is to ...
+The goal of servermonks is to compare COVID-19 data for California and Massachusetts.
 
 ## Installation
 
