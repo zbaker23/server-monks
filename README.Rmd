@@ -20,7 +20,14 @@ knitr::opts_chunk$set(
 [![CRAN status](https://www.r-pkg.org/badges/version/servermonks)](https://CRAN.R-project.org/package=servermonks)
 <!-- badges: end -->
 
-The goal of servermonks is to compare COVID-19 data for California and Massachusetts.
+## Purpose
+
+The goal of servermonks is to compare COVID-19 data for California and Massachusetts. In addition, this package will empower users to evaluate how different counties across CA are covered by vaccinations in light of how the majority voted on the recall election for governor of California 
+
+## Target audiences:
+
+Public and private entities who are interested in looking at a relationship, if any, between trends in the polarized political races we saw during the course of the pandemic 
+
 
 ## Installation
 
