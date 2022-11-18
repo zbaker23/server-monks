@@ -26,12 +26,21 @@ saw during the course of the pandemic
 
 ## Installation
 
-You can install the development version of servermonks like so:
+You can install the development version of servermonks from Github with
+the following code:
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
-
-## IPEDS model 
+# install.packages("devtools")
+devtools::install_github("zbaker23/server-monks")
+#> Downloading GitHub repo zbaker23/server-monks@HEAD
+#>   ✔  checking for file ‘/private/var/folders/bg/sw1rtkpd2gn7092rp9k766840000gn/T/RtmpiK9Rd1/remotes53e2633774ba/zbaker23-server-monks-bec0f62/DESCRIPTION’
+#>   ─  preparing ‘servermonks’:
+#>    checking DESCRIPTION meta-information ...  ✔  checking DESCRIPTION meta-information
+#>   ─  checking for LF line-endings in source and make files and shell scripts
+#>   ─  checking for empty or unneeded directories
+#>   ─  building ‘servermonks_0.0.0.9000.tar.gz’
+#>      
+#> 
 ```
 
 ## Example

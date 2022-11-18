@@ -31,12 +31,11 @@ Public and private entities who are interested in looking at a relationship, if 
 
 ## Installation
 
-You can install the development version of servermonks like so:
+You can install the development version of servermonks from Github with the following code:
 
-``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
-
-## IPEDS model 
+```{r}
+# install.packages("devtools")
+devtools::install_github("zbaker23/server-monks")
 ```
 
 ## Example
