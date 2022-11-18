@@ -30,6 +30,8 @@ You can install the development version of servermonks like so:
 
 ``` r
 # FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+
+## IPEDS model 
 ```
 
 ## Example

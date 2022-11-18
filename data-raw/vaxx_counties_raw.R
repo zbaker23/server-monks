@@ -1,4 +1,4 @@
-## code to prepare `DATASET` dataset goes here
+## code to prepare `vaxx_counties` dataset goes here
 
 library(tidyverse)
 library(janitor)
