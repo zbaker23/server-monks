@@ -47,9 +47,12 @@ devtools::install_github("zbaker23/server-monks")
 This is a basic example which shows you how to use the print() base R function within our servermonks package to visualize the ballot_question dataset. For the ballot measure question of, "Shall Gavin Newsom Be Recalled (Removed) From the Office of Governor?" for the 2021 CA Gubernational Recall Election, this dataset details the number of "yes" votes, the number of "no" votes, the percentage of the votes that are "yes", and the percentage of the votes that are "no" by county. 
 
 ```{r example}
+
 library(servermonks)
 
-print(ballot_question)
+print(vaxx_counties)
+
+
 ```
 
 ## Group assignment

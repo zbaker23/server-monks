@@ -3,6 +3,6 @@
 library(tidyverse)
 library(janitor)
 library(readxl)
-ballot_measures <- read_xlsx("data-raw/16-question.xlsx") %>%
+X16_question <- read_xlsx("data-raw/16-question.xlsx") %>%
   clean_names()
-usethis::use_data(ballot_measures, overwrite = TRUE)
+usethis::use_data(X16_question, overwrite = TRUE)
