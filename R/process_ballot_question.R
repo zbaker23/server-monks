@@ -15,4 +15,4 @@
 #' }
 #'
 #' @source <https://www.sos.ca.gov/elections/prior-elections/statewide-election-results/2021-ca-gov-recall/statement-vote>
-"ballot_measures"
+"ballot_question"

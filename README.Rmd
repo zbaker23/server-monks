@@ -50,7 +50,7 @@ This is a basic example which shows you how to use the print() base R function w
 
 library(servermonks)
 
-print(vaxx_counties)
+print(ballot_question)
 
 
 ```
