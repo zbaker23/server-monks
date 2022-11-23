@@ -33,7 +33,7 @@ the following code:
 # install.packages("devtools")
 devtools::install_github("zbaker23/server-monks")
 #> Downloading GitHub repo zbaker23/server-monks@HEAD
-#>   ✔  checking for file ‘/private/var/folders/bg/sw1rtkpd2gn7092rp9k766840000gn/T/RtmpiK9Rd1/remotes53e2633774ba/zbaker23-server-monks-bec0f62/DESCRIPTION’
+#>      checking for file ‘/private/var/folders/bg/sw1rtkpd2gn7092rp9k766840000gn/T/Rtmph6fjD9/remotes1031314045ef0/zbaker23-server-monks-1b389b8/DESCRIPTION’ ...  ✔  checking for file ‘/private/var/folders/bg/sw1rtkpd2gn7092rp9k766840000gn/T/Rtmph6fjD9/remotes1031314045ef0/zbaker23-server-monks-1b389b8/DESCRIPTION’
 #>   ─  preparing ‘servermonks’:
 #>    checking DESCRIPTION meta-information ...  ✔  checking DESCRIPTION meta-information
 #>   ─  checking for LF line-endings in source and make files and shell scripts
@@ -41,6 +41,9 @@ devtools::install_github("zbaker23/server-monks")
 #>   ─  building ‘servermonks_0.0.0.9000.tar.gz’
 #>      
 #> 
+#> Warning in i.p(...): installation of package '/var/folders/bg/
+#> sw1rtkpd2gn7092rp9k766840000gn/T//Rtmph6fjD9/file103132af4e8d4/
+#> servermonks_0.0.0.9000.tar.gz' had non-zero exit status
 ```
 
 ## Example
