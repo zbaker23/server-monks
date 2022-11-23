@@ -5,9 +5,9 @@
 #' @format ## `ballot_measures`
 #' A data frame with 236 entries and 3 columns:
 #' \describe{
-#'   \item{county}{country name}
-#'   \item{administered_date}{the YYYY-MM-DD format date when the vaccine was administered}
-#'   \item{total_doses}{total doses for a date}
+#'   \item{Column 1}{County number of votes and county percentage of votes}
+#'   \item{Column 2}{Number and percentage of 'yes' votes}
+#'   \item{Column 3}{Number and percentage of 'no' votes}
 #'   ...
 #' }
 #'
