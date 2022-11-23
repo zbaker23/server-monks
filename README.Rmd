@@ -52,12 +52,11 @@ library(servermonks)
 
 print(ballot_question)
 
-
 ```
 
 ## Group assignment
 
-For Project Phase III, we want to continue working with the servermonks package to include further functions that will help users summarize and then view the built-in datasets for our package in different ways.
+For Project Phase III, we want to continue working with the servermonks package to include further functions that will help users summarize and then view the built-in datasets for our package in different ways. The current function in our package, quick_summary_vaxx_vs_recall(), lets a user quickly look statistics on vaccine rates and support for the 2021 recall election in a county of their choice, and compare them to the California counties with the most extreme statistics for vaccination rates and recall support. We plan to write a function that creates visualizations allowing users to easily compare counties to each other, rather than only returning descriptive text. 
 
 
 ```

@@ -49,14 +49,19 @@ the following code:
 # install.packages("devtools")
 devtools::install_github("zbaker23/server-monks")
 #> Downloading GitHub repo zbaker23/server-monks@HEAD
-#>      checking for file ‘/private/var/folders/bg/sw1rtkpd2gn7092rp9k766840000gn/T/Rtmp0dMj9d/remotes1131414311e0f/zbaker23-server-monks-2c2e6f8/DESCRIPTION’ ...  ✔  checking for file ‘/private/var/folders/bg/sw1rtkpd2gn7092rp9k766840000gn/T/Rtmp0dMj9d/remotes1131414311e0f/zbaker23-server-monks-2c2e6f8/DESCRIPTION’
-#>   ─  preparing ‘servermonks’:
-#>    checking DESCRIPTION meta-information ...  ✔  checking DESCRIPTION meta-information
-#>   ─  checking for LF line-endings in source and make files and shell scripts
+#>          checking for file 'C:\Users\jandr\AppData\Local\Temp\RtmpCQ3DWi\remotes19fc69f41f53\zbaker23-server-monks-5a1c1b8/DESCRIPTION' ...  ✔  checking for file 'C:\Users\jandr\AppData\Local\Temp\RtmpCQ3DWi\remotes19fc69f41f53\zbaker23-server-monks-5a1c1b8/DESCRIPTION' (461ms)
+#>       ─  preparing 'servermonks':
+#>    checking DESCRIPTION meta-information ...     checking DESCRIPTION meta-information ...   ✔  checking DESCRIPTION meta-information
+#>       ─  excluding invalid files
+#>    Subdirectory 'man' contains invalid file names:
+#>      'functionwork.Rmd'
+#>       ─  checking for LF line-endings in source and make files and shell scripts
 #>   ─  checking for empty or unneeded directories
-#>   ─  building ‘servermonks_0.0.0.9000.tar.gz’
+#>       ─  building 'servermonks_0.0.0.9000.tar.gz'
 #>      
 #> 
+#> Installing package into 'C:/Users/jandr/AppData/Local/R/win-library/4.2'
+#> (as 'lib' is unspecified)
 ```
 
 ## Example
@@ -140,6 +145,13 @@ print(ballot_question)
 
 For Project Phase III, we want to continue working with the servermonks
 package to include further functions that will help users summarize and
-then view the built-in datasets for our package in different ways.
+then view the built-in datasets for our package in different ways. The
+current function in our package, quick_summary_vaxx_vs_recall(), lets a
+user quickly look statistics on vaccine rates and support for the 2021
+recall election in a county of their choice, and compare them to the
+California counties with the most extreme statistics for vaccination
+rates and recall support. We plan to write a function that creates
+visualizations allowing users to easily compare counties to each other,
+rather than only returning descriptive text.
 
 \`\`\`
