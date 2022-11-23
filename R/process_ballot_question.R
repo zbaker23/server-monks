@@ -1,6 +1,7 @@
 #' California Gubernatorial Recall Election - Statement of Vote, September 14, 2021.
 #'
 #' A tidy dataset of the subset of data for the results of the ballot measures voted on during the 2021 California Gubernatorial Recall Election.
+#' Data were tidied using Microsoft Excel.
 #'
 #' @format ## `ballot_measures`
 #' A data frame with 59 entries and 5 columns:

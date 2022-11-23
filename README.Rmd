@@ -22,7 +22,11 @@ knitr::opts_chunk$set(
 
 ## Purpose
 
-The goal of servermonks is to compare COVID-19 data for California and Massachusetts. In addition, this package will empower users to evaluate how different counties across CA are covered by vaccinations in light of how the majority voted on the recall election for governor of California 
+The goal of servermonks is to compare COVID-19 vaccination data for California with the results, by county, of the 2021 CA Gubernatorial Recall Election. In [a CNN article](https://www.cnn.com/2021/08/28/politics/california-recall-what-matters/index.html) analyzing the context behind the recall election, Ethan Cohen (Reston and CNN) is quoted saying that:
+
+"[Although political groups in CA launched efforts to oust Gov. Newsom before the pandemic, the]quest to collect enough signature petitions to force a recall election took off late last year amid anger about Newsom’s Covid-19 stay-at-home orders and other restrictions. And while the governor appeared to be in a strong position to withstand the effort for much of this year, the resurgence of the pandemic [with the delta variant] and frustration with the state’s wildfire, drought and homelessness crises has injected an unexpected level of volatility into the race in an overwhelmingly blue state."
+
+The functions and tidy datasets included in this package will thus empower users to ask questions about the different ways in which counties in California have responded to the pandemic.
 
 ## Target audiences:
 
@@ -40,32 +44,17 @@ devtools::install_github("zbaker23/server-monks")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This is a basic example which shows you how to use the print() base R function within our servermonks package to visualize the ballot_question dataset. For the ballot measure question of, "Shall Gavin Newsom Be Recalled (Removed) From the Office of Governor?" for the 2021 CA Gubernational Recall Election, this dataset details the number of "yes" votes, the number of "no" votes, the percentage of the votes that are "yes", and the percentage of the votes that are "no" by county. 
 
 ```{r example}
 library(servermonks)
-## basic example code
+
+print(ballot_question)
 ```
 
-What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
+## Group assignment
 
-```{r cars}
-summary(cars)
+For Project Phase III, we want to continue working with the servermonks package to include further functions that will help users summarize and then view the built-in datasets for our package in different ways.
+
+
 ```
-
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this. You could also use GitHub Actions to re-render `README.Rmd` every time you push. An example workflow can be found here: <https://github.com/r-lib/actions/tree/v1/examples>.
-
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
-
-## test code to make sure push works
-```{r}
-testing <- c("testing", "testing", "one", "two", "three")
-testing
-```
-
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub and CRAN.
