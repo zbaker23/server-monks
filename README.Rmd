@@ -39,7 +39,6 @@ Public and private entities who are interested in looking at a relationship, if 
 You can install the development version of servermonks from Github with the following code:
 
 ```{r}
-# install.packages("devtools")
 devtools::install_github("zbaker23/server-monks")
 ```
 
