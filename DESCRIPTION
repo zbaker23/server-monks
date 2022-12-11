@@ -2,8 +2,11 @@ Package: servermonks
 Title: What the Package Does (One Line, Title Case)
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+    c(person("Zoe", "Baker", "zbaker@smith.edu", role = c("aut", "cre")),
+           person("Jane", "Andrews", "jkandrews@smith.edu", role = c("aut"))
+Author: Zoe Baker [aut, cre],
+Jane Andrews [aut]
+Maintainer: Jane Andrews <jkandrews@smith.edu>
 Description: What the package does (one paragraph).
 License: MIT + file LICENSE
 Suggests: 
