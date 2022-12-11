@@ -2,14 +2,10 @@ Package: servermonks
 Title: What the Package Does (One Line, Title Case)
 Version: 0.0.0.9000
 Authors@R: 
-    c(person(given = "Zoe",
+    person(given = "Zoe",
              family = "Baker",
              role = c("aut", "cre"),
-             email = "zoebaker01@gmail.com"),
-      person(given = "Jane",
-             family = "Andrews",
-             role = "aut")
-			 )
+             email = "zoebaker01@gmail.com")
 Description: What the package does (one paragraph).
 License: MIT + file LICENSE
 Suggests: 
