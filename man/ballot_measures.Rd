@@ -7,11 +7,11 @@
 \format{
 \subsection{\code{ballot_measures}}{
 
-A data frame with 236 entries and 3 columns:
+A data frame with 118 entries and 3 columns:
 \describe{
-\item{Column 1}{County number of votes and county percentage of votes}
-\item{Column 2}{Number and percentage of 'yes' votes}
-\item{Column 3}{Number and percentage of 'no' votes}
+\item{x1}{County number of votes and county percentage of votes}
+\item{yes}{Number and percentage of 'yes' votes}
+\item{no}{Number and percentage of 'no' votes}
 ...
 }
 }
