@@ -61,4 +61,6 @@ print(ballot_question)
 For a more in-depth overview of the `servermonks` package, please refer to the servermonks vignette. For questions related to using the function `quick_summary_vaxx_vs_recall()`, please refer to the tutorial found in the `functionwork.Rmd` file. 
 
 
+
+
 ```
