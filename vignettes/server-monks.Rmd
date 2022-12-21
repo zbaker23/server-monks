@@ -28,14 +28,6 @@ One may ask: Why would users wish to do such an exercise in data analysis? In a 
 
 In this vignette, you will find an overview of the functions and tidy datasets included in this package that will  empower users to ask questions about the different ways in which counties in California have responded to the pandemic. 
 
-## Installation
-
-To install the development version of our package from GitHub, use the following code:
-```{r, message=FALSE}
-# install.packages("devtools")
-devtools::install_github("zbaker23/server-monks")
-
-```
 
 ### About the data
 
