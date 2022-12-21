@@ -1,3 +1,8 @@
+---
+editor_options: 
+  markdown: 
+    wrap: 72
+---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
@@ -10,6 +15,7 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 [![CRAN
 status](https://www.r-pkg.org/badges/version/servermonks)](https://CRAN.R-project.org/package=servermonks)
 [![R-CMD-check](https://github.com/zbaker23/server-monks/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/zbaker23/server-monks/actions/workflows/R-CMD-check.yaml)
+
 <!-- badges: end -->
 
 ## Purpose
@@ -21,15 +27,15 @@ article](https://www.cnn.com/2021/08/28/politics/california-recall-what-matters/
 analyzing the context behind the recall election, Ethan Cohen (Reston
 and CNN) is quoted saying that:
 
-“\[Although political groups in CA launched efforts to oust Gov. Newsom
-before the pandemic, the\]quest to collect enough signature petitions to
+"$$Although political groups in CA launched efforts to oust Gov. Newsom
+before the pandemic, the$$quest to collect enough signature petitions to
 force a recall election took off late last year amid anger about
-Newsom’s Covid-19 stay-at-home orders and other restrictions. And while
+Newsom's Covid-19 stay-at-home orders and other restrictions. And while
 the governor appeared to be in a strong position to withstand the effort
-for much of this year, the resurgence of the pandemic \[with the delta
-variant\] and frustration with the state’s wildfire, drought and
+for much of this year, the resurgence of the pandemic $$with the delta
+variant$$ and frustration with the state's wildfire, drought and
 homelessness crises has injected an unexpected level of volatility into
-the race in an overwhelmingly blue state.”
+the race in an overwhelmingly blue state."
 
 The functions and tidy datasets included in this package will thus
 empower users to ask questions about the different ways in which
@@ -54,11 +60,11 @@ devtools::install_github("zbaker23/server-monks")
 
 This is a basic example which shows you how to use the print() base R
 function within our servermonks package to visualize the ballot_question
-dataset. For the ballot measure question of, “Shall Gavin Newsom Be
-Recalled (Removed) From the Office of Governor?” for the 2021 CA
-Gubernational Recall Election, this dataset details the number of “yes”
-votes, the number of “no” votes, the percentage of the votes that are
-“yes”, and the percentage of the votes that are “no” by county.
+dataset. For the ballot measure question of, "Shall Gavin Newsom Be
+Recalled (Removed) From the Office of Governor?" for the 2021 CA
+Gubernational Recall Election, this dataset details the number of "yes"
+votes, the number of "no" votes, the percentage of the votes that are
+"yes", and the percentage of the votes that are "no" by county.
 
 ``` r
 
@@ -127,17 +133,11 @@ print(ballot_question)
 #> 59    State Totals 4894473    38.1 7944092   61.9
 ```
 
-## Group assignment
+## Additional notes
 
-For Project Phase III, we want to continue working with the servermonks
-package to include further functions that will help users summarize and
-then view the built-in datasets for our package in different ways. The
-current function in our package, quick_summary_vaxx_vs_recall(), lets a
-user quickly look statistics on vaccine rates and support for the 2021
-recall election in a county of their choice, and compare them to the
-California counties with the most extreme statistics for vaccination
-rates and recall support. We plan to write a function that creates
-visualizations allowing users to easily compare counties to each other,
-rather than only returning descriptive text.
+For a more in-depth overview of the \`servermonks\` package, please
+refer to the servermonks vignette. For questions related to using the
+function \`quick_summary_vaxx_vs_recall()\`, please refer to the
+tutorial found in the \`functionwork.Rmd\` file.
 
 \`\`\`
