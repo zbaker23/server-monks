@@ -47,38 +47,7 @@ You can install the development version of servermonks from Github with
 the following code:
 
 ``` r
-# install.packages("devtools")
 devtools::install_github("zbaker23/server-monks")
-#> Downloading GitHub repo zbaker23/server-monks@HEAD
-#> vctrs   (0.5.0 -> 0.5.1) [CRAN]
-#> isoband (0.2.5 -> 0.2.6) [CRAN]
-#> Installing 2 packages: vctrs, isoband
-#> Installing packages into 'C:/Users/jandr/AppData/Local/R/win-library/4.2'
-#> (as 'lib' is unspecified)
-#> package 'vctrs' successfully unpacked and MD5 sums checked
-#> Warning: cannot remove prior installation of package 'vctrs'
-#> Warning in file.copy(savedcopy, lib, recursive = TRUE): problem copying C:
-#> \Users\jandr\AppData\Local\R\win-library\4.2\00LOCK\vctrs\libs\x64\vctrs.dll
-#> to C:\Users\jandr\AppData\Local\R\win-library\4.2\vctrs\libs\x64\vctrs.dll:
-#> Permission denied
-#> Warning: restored 'vctrs'
-#> package 'isoband' successfully unpacked and MD5 sums checked
-#> 
-#> The downloaded binary packages are in
-#>  C:\Users\jandr\AppData\Local\Temp\RtmpwfAMQa\downloaded_packages
-#>          checking for file 'C:\Users\jandr\AppData\Local\Temp\RtmpwfAMQa\remotes52457d74494\zbaker23-server-monks-9311d69/DESCRIPTION' ...  ✔  checking for file 'C:\Users\jandr\AppData\Local\Temp\RtmpwfAMQa\remotes52457d74494\zbaker23-server-monks-9311d69/DESCRIPTION' (490ms)
-#>       ─  preparing 'servermonks': (941ms)
-#>    checking DESCRIPTION meta-information ...     checking DESCRIPTION meta-information ...   ✔  checking DESCRIPTION meta-information
-#>       ─  excluding invalid files
-#>    Subdirectory 'R' contains invalid file names:
-#>      'functionwork.Rmd' 'functionwork.html'
-#>       ─  checking for LF line-endings in source and make files and shell scripts
-#>   ─  checking for empty or unneeded directories
-#>       ─  building 'servermonks_0.0.0.9000.tar.gz'
-#>      
-#> 
-#> Installing package into 'C:/Users/jandr/AppData/Local/R/win-library/4.2'
-#> (as 'lib' is unspecified)
 ```
 
 ## Example
@@ -94,24 +63,68 @@ votes, the number of “no” votes, the percentage of the votes that are
 ``` r
 
 library(servermonks)
-#> Loading required package: ggplot2
-#> Warning: package 'ggplot2' was built under R version 4.2.2
 
 print(ballot_question)
-#> # A tibble: 59 × 5
-#>    county       yes_num no_num yes_per no_per
-#>    <chr>          <dbl>  <dbl>   <dbl>  <dbl>
-#>  1 Alameda       108081 465901   0.188  0.812
-#>  2 Alpine           225    354   0.389  0.611
-#>  3 Amador         12895   6957   0.65   0.35 
-#>  4 Butte          43129  36128   0.544  0.456
-#>  5 Calaveras      15133   8320   0.645  0.355
-#>  6 Colusa          4037   2027   0.666  0.334
-#>  7 Contra Costa  130058 324747   0.286  0.714
-#>  8 Del Norte       5243   3505   0.599  0.401
-#>  9 El Dorado      58393  39907   0.594  0.406
-#> 10 Fresno        133309 126488   0.513  0.487
-#> # … with 49 more rows
+#>             County Yes_num Yes_per  No_num No_per
+#> 1          Alameda  108081    18.8  465901   81.2
+#> 2           Alpine     225    38.9     354   61.1
+#> 3           Amador   12895    65.0    6957   35.0
+#> 4            Butte   43129    54.4   36128   45.6
+#> 5        Calaveras   15133    64.5    8320   35.5
+#> 6           Colusa    4037    66.6    2027   33.4
+#> 7     Contra Costa  130058    28.6  324747   71.4
+#> 8        Del Norte    5243    59.9    3505   40.1
+#> 9        El Dorado   58393    59.4   39907   40.6
+#> 10          Fresno  133309    51.3  126488   48.7
+#> 11           Glenn    6331    71.8    2485   28.2
+#> 12        Humboldt   18621    36.0   33164   64.0
+#> 13        Imperial   13177    40.6   19288   59.4
+#> 14            Inyo    4134    54.1    3502   45.9
+#> 15            Kern  131061    61.8   81030   38.2
+#> 16           Kings   19710    63.7   11242   36.3
+#> 17            Lake   10923    49.0   11367   51.0
+#> 18          Lassen    8538    84.2    1604   15.8
+#> 19     Los Angeles  855940    29.2 2077859   70.8
+#> 20          Madera   25638    61.2   16233   38.8
+#> 21           Marin   24273    18.3  108599   81.7
+#> 22        Mariposa    5378    61.4    3376   38.6
+#> 23       Mendocino   12075    35.3   22093   64.7
+#> 24          Merced   30210    52.0   27867   48.0
+#> 25           Modoc    2593    78.0     730   22.0
+#> 26            Mono    2245    44.5    2805   55.5
+#> 27        Monterey   38169    32.1   80664   67.9
+#> 28            Napa   18681    32.4   38948   67.6
+#> 29          Nevada   25426    46.0   29851   54.0
+#> 30          Orange  547685    48.3  586457   51.7
+#> 31          Placer  115411    57.4   85677   42.6
+#> 32          Plumas    5842    63.2    3408   36.8
+#> 33       Riverside  362958    50.5  355630   49.5
+#> 34      Sacramento  220498    40.1  329952   59.9
+#> 35      San Benito    9276    42.2   12718   57.8
+#> 36  San Bernardino  286364    49.8  288877   50.2
+#> 37       San Diego  505081    42.8  674670   57.2
+#> 38   San Francisco   47193    13.9  292744   86.1
+#> 39     San Joaquin   94877    47.4  105405   52.6
+#> 40 San Luis Obispo   61203    47.2   68429   52.8
+#> 41       San Mateo   64390    22.1  227368   77.9
+#> 42   Santa Barbara   58149    38.2   94219   61.8
+#> 43     Santa Clara  166995    26.3  468851   73.7
+#> 44      Santa Cruz   25454    21.9   90874   78.1
+#> 45          Shasta   51608    69.6   22592   30.4
+#> 46          Sierra    1065    63.4     616   36.6
+#> 47        Siskiyou   11295    61.9    6961   38.1
+#> 48          Solano   58372    37.3   97935   62.7
+#> 49          Sonoma   57419    26.3  160602   73.7
+#> 50      Stanislaus   82911    54.5   69247   45.5
+#> 51          Sutter   20458    63.8   11593   36.2
+#> 52          Tehama   16770    72.4    6386   27.6
+#> 53         Trinity    2699    56.2    2106   43.8
+#> 54          Tulare   64372    61.1   41009   38.9
+#> 55        Tuolumne   15832    61.6    9850   38.4
+#> 56         Ventura  136610    42.8  182470   57.2
+#> 57            Yolo   24769    32.1   52444   67.9
+#> 58            Yuba   15291    65.8    7961   34.2
+#> 59    State Totals 4894473    38.1 7944092   61.9
 ```
 
 ## Group assignment

@@ -38,7 +38,7 @@ Public and private entities who are interested in looking at a relationship, if 
 
 You can install the development version of servermonks from Github with the following code:
 
-```{r}
+```{r, message=FALSE}
 devtools::install_github("zbaker23/server-monks")
 ```
 
@@ -46,17 +46,19 @@ devtools::install_github("zbaker23/server-monks")
 
 This is a basic example which shows you how to use the print() base R function within our servermonks package to visualize the ballot_question dataset. For the ballot measure question of, "Shall Gavin Newsom Be Recalled (Removed) From the Office of Governor?" for the 2021 CA Gubernational Recall Election, this dataset details the number of "yes" votes, the number of "no" votes, the percentage of the votes that are "yes", and the percentage of the votes that are "no" by county. 
 
-```{r example}
+```{r example, message=FALSE}
 
 library(servermonks)
 
 print(ballot_question)
 
+
+
 ```
 
-## Group assignment
+## Additional notes
 
-For Project Phase III, we want to continue working with the servermonks package to include further functions that will help users summarize and then view the built-in datasets for our package in different ways. The current function in our package, quick_summary_vaxx_vs_recall(), lets a user quickly look statistics on vaccine rates and support for the 2021 recall election in a county of their choice, and compare them to the California counties with the most extreme statistics for vaccination rates and recall support. We plan to write a function that creates visualizations allowing users to easily compare counties to each other, rather than only returning descriptive text. 
+For a more in-depth overview of the `servermonks` package, please refer to the servermonks vignette. For questions related to using the function `quick_summary_vaxx_vs_recall()`, please refer to the tutorial found in the `functionwork.Rmd` file. 
 
 
 ```

@@ -14,8 +14,65 @@ knitr::opts_chunk$set(
 )
 ```
 
-```{r setup}
+```{r setup, message=FALSE}
 library(servermonks)
 ```
 
-this is my vignette
+### Introduction 
+
+The purpose of the servermonks package is listed on the Github repository for the package as follows: to compare COVID-19 vaccination data for California with the results, by county, of the 2021 CA Gubernatorial Recall Election. 
+
+One may ask: Why would users wish to do such an exercise in data analysis? In a CNN article analyzing the context behind the recall election, Ethan Cohen (Reston and CNN) is quoted saying that:
+
+“[Although political groups in CA launched efforts to oust Gov. Newsom before the pandemic, the]quest to collect enough signature petitions to force a recall election took off late last year amid anger about Newsom’s Covid-19 stay-at-home orders and other restrictions. And while the governor appeared to be in a strong position to withstand the effort for much of this year, the resurgence of the pandemic [with the delta variant] and frustration with the state’s wildfire, drought and homelessness crises has injected an unexpected level of volatility into the race in an overwhelmingly blue state.”
+
+In this vignette, you will find an overview of the functions and tidy datasets included in this package that will  empower users to ask questions about the different ways in which counties in California have responded to the pandemic. 
+
+## Installation
+
+To install the development version of our package from GitHub, use the following code:
+```{r, message=FALSE}
+# install.packages("devtools")
+devtools::install_github("zbaker23/server-monks")
+
+```
+
+### About the data
+
+The datasets in `servermonks` come from two raw dataset sources. The first raw dataset is called `ballot_measures`, which is the results of the ballot measures voted on during the 2021 California Gubernatorial Recall Election. The tidy data version of the raw `ballot_measures` dataset is the wrangled `ballot_questions` dataset, which details the following results for the votes, by county, for the ballot measure question of, "Shall Gavin Newsom Be Recalled (Removed) From the Office of Governor?": the number of "yes" votes, the number of "no" votes, the percentage of the votes that are "yes", and the percentage of the votes that are "no" by county.
+
+You can peek at our `ballot_question` dataset here:
+
+```{r}
+head(ballot_question)
+```
+
+
+The second raw dataset is called `vaxx_counties`, which contains the data from the California Department of Health on cumulative vaccination statistics by demographic as of 2022-11-14. From this dataset, the dataset `vaxx_before_recall`, or vaccination data from the California Department of Health collected before the 2021 California Gubernatorial Recall Election, and the dataset `vaxx_after_recall`, or vaccination data from the California Department of Health collected after the 2021 California Gubernatorial Recall Election, were created. 
+
+
+You can peek at the information contained in our `vaxx_after_recall` dataset here:
+
+```{r}
+glimpse(vaxx_counties)
+```
+
+
+
+### About the function `quick_summary_vaxx_vs_recall()`
+
+As outlined in the tutorial for this function, the purpose of `quick_summary_vaxx_vs_recall()` is to allow a user to quickly find out information about the rates of full vaccinations and the support for the 2021 attempted recall of Gov. Gavin Newsom in a county of their choosing. 
+
+As the function supplies the user with information about the state's extremes (i.e. highest and lowest rates of vaccination, highest and lowest levels of support for Gavin Newsom's recall), using this function quickly informs a reader of California's political diversity, and gives them a better understanding of where a county of their choice may fall on the state's political spectrum. The recall efforts were, in part, an expression of opposition to Gov. Newsom's strict COVID-19 policies, and yet these data are not often explored side by side, even though comparison is useful. 
+
+An example of how one uses this function is as follows.
+
+```{r}
+quick_summary_vaxx_vs_recall("Los Angeles")
+```
+
+
+
+
+
+
